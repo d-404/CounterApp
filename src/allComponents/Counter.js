@@ -3,6 +3,10 @@ import '../allComponents/Counter.css';
 
 class Counter extends React.Component {
 
+    componentDidMount() {
+        document.title = 'Counter App';
+    }
+
     constructor(props) {
         super(props);
         this.state = {
@@ -13,39 +17,40 @@ class Counter extends React.Component {
         };
     }
 
-    // Function to increase the count
+    //To increase the count
     increaseCount = () => {
         const { count, customInput, history } = this.state;
         const inputAsNumber = parseInt(customInput);
 
-        const newCount = isNaN(inputAsNumber) ? count + 1 : count + inputAsNumber; // Increase by 1 if not a valid number
+        const newCount = isNaN(inputAsNumber) ? count + 1 : count + inputAsNumber;
 
         const newHistory = [...history, newCount];
 
         this.setState({
             count: newCount,
-            customInput: '', // Clear the input
+            customInput: '',
             history: newHistory.slice(-5),
         });
     };
 
-    // Function to decrease the count
+    //To decrease the count
     decreaseCount = () => {
         const { count, customInput, history } = this.state;
         const inputAsNumber = parseInt(customInput);
 
-        const newCount = isNaN(inputAsNumber) ? count - 1 : count - inputAsNumber; // Decrease by 1 if not a valid number
+        const newCount = isNaN(inputAsNumber) ? count - 1 : count - inputAsNumber;
 
         const finalCount = newCount >= 0 ? newCount : 0;
         const newHistory = [...history, finalCount];
 
         this.setState({
             count: finalCount,
-            customInput: '', // Clear the input
+            customInput: '',
             history: newHistory.slice(-5),
         });
     };
 
+    //To handle custom input
     handleCustomIncrementChange = (e) => {
         const inputValue = e.target.value;
 
@@ -69,17 +74,17 @@ class Counter extends React.Component {
         }
     };
 
-    // Function to handle input hover
+    //To handle input hover
     handleInputHover = () => {
         this.setState({ isInputHovered: true });
     };
 
-    // Function to handle input hover exit
+    //To handle input hover exit
     handleInputHoverExit = () => {
         this.setState({ isInputHovered: false });
     };
 
-    // Function to reset the count
+    //To reset the count
     resetCount = () => {
         this.setState({
             count: 1,
@@ -96,7 +101,7 @@ class Counter extends React.Component {
                 <h1>Counter App</h1>
                 <div className="counter-app ">
                     <div className='count-container'>
-                        <h2 className=' count'>Count: {count}</h2>
+                        <h2 className='count'>Count: {count}</h2>
                         <button className='buttons' onClick={this.increaseCount}>Increase</button>
                         <button className='buttons' onClick={this.decreaseCount} disabled={count === 0}>Decrease</button>
                         <button className='reset-button' onClick={this.resetCount}>Reset</button>
@@ -115,7 +120,7 @@ class Counter extends React.Component {
                         </div>
                     </div>
                     <div className="history">
-                        <h3>Count History</h3>
+                        <h2>History</h2>
                         {history.slice().reverse().map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
