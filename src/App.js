@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import Counter from './allComponents/Counter'; // Import the Counter component
+import Counter from './allComponents/Counter';
 import './App.css';
 
 function App() {
