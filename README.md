@@ -1,22 +1,13 @@
 # Counter App
 
-A simple React-based counter app with additional features such as custom increments and count history.
-
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Author](#Author)
+A simple counter app with functionalities like increment, decrement, resset and custom increment/decrement.
 
 ## Features
 
 - Increase and decrease the count.
 - Reset the count to zero.
-- Input field for custom increments or decrements.
-- Display the last five count values in the history.
-- Red shadow effect on the custom increment input field on hover.
-- Red reset button for a visually distinctive reset action.
+- Input for custom increments or decrements.
+- Display the history.
 
 ## Getting Started
 
@@ -60,4 +51,3 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## Author
 
 - SOUVIK DAS
-
