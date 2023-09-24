@@ -1,0 +1,67 @@
+/* Styles for the entire counter app container */
+.counter-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles for the count container */
+.count-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Styles for the count */
+.count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles for the buttons container */
+.buttons {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Styles for the input container */
+.input-container {
+    margin-top: 20px;
+}
+
+/* Add red shadow on hover to the input */
+.input-hover:hover {
+    box-shadow: 0 0 5px 2px red;
+}
+
+/* Styles for the history container */
+.history {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+input[type="number"] {
+    color: blue;
+}
+
+.reset-button {
+    background-color: rgb(237, 91, 91);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
