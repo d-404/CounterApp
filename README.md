@@ -38,26 +38,26 @@ Follow these instructions to get a copy of the project up and running on your lo
    cd Counter-App
    ``` 
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
    ```bash
    npm install
    ``` 
 
 
-2. **Run :**
+4. **Run :**
 
    ```bash
    npm start
    ``` 
 ## Usage
 
-1. Increase Count.
-2. Decrease Count.
-3. Custom Increment/Decrement.
-4. Count History.
+1. Increase Count
+2. Decrease Count
+3. Custom Increment/Decrement
+4. Count History
 
 ## Author
 
-- SAURABH KUMAR RAI
+- SOUVIK DAS
 
